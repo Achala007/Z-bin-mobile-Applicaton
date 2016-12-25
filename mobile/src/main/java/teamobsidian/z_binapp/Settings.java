@@ -33,7 +33,7 @@ public class Settings extends AppCompatActivity {
 
         changebtn=(Button)findViewById(R.id.changebtn);
         changebtn.setOnClickListener(new View.OnClickListener() {
-            @Override
+            
             public void onClick(View v) {
                 Intent intent3 = new Intent(Settings.this, Form.class);
                 startActivity(intent3);
