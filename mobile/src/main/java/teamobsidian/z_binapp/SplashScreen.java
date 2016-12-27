@@ -17,7 +17,7 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-//check for ImageView variable
+
         final ImageView im=(ImageView)findViewById(R.id.splashImage1);
         //load and rotate the splashscreen
         final Animation an= AnimationUtils.loadAnimation(getBaseContext(),R.anim.rotate);
@@ -25,7 +25,7 @@ public class SplashScreen extends AppCompatActivity {
 
         im.startAnimation(an);
         an.setAnimationListener(new Animation.AnimationListener() {
-            @Override
+           
             public void onAnimationStart(Animation animation) {
 
             }
@@ -35,7 +35,7 @@ public class SplashScreen extends AppCompatActivity {
                 im.startAnimation(an2);
                 finish();
 
-                 //After end of the animation direct to login
+                 
                         Intent i=new Intent( SplashScreen.this,Login.class);
                         startActivity(i);
 
