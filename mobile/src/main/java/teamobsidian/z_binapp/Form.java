@@ -1,3 +1,4 @@
+
 package com.obsidian.teamobsidian.z_bin;
 
 import android.content.Intent;
@@ -47,8 +48,7 @@ public class Form extends AppCompatActivity {
       public void Settings(){
          Settings=(Button)findViewById(R.id.Settings);
          Settings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                       public void onClick(View v) {
                Intent intent2 = new Intent(MainActivity.this, Settings.class);
                startActivity(intent2);
             }
