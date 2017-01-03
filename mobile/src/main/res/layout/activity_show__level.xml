@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show__level"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.obsidian.teamobsidian.z_bin.Show_Level">
+
+
+    <Button
+        android:text="Back"
+        android:textSize="25dp"
+        android:background="@android:color/holo_blue_light"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="backToLevel (Show_Level)"
+        android:id="@+id/back"
+        android:visibility="visible" /><![CDATA[
+
+        android:layout_width="550dp"
+        android:layout_height="250dp"
+        app:srcCompat="@android:drawable/editbox_dropdown_dark_frame"
+        android:id="@+id/imgLevel"
+        android:src="@drawable/level_dis"
+
+        android:layout_marginBottom="17dp"
+        android:layout_alignBottom="@+id/Value"
+        android:layout_alignParentStart="true" />
+
+    ]]>
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        app:srcCompat="@android:drawable/editbox_dropdown_light_frame"
+        android:id="@+id/imgLevel"
+        android:src="@drawable/level_dis"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp" />
+
+    <TextView
+        android:id="@+id/Value"
+
+        android:text=""
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:textSize="45dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+
+
+        android:layout_marginBottom="11dp"
+        android:layout_alignBottom="@+id/imgLevel"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
