@@ -34,12 +34,12 @@
                     Map<String,String> map = dataSnapshot.getValue(Map.class);
                     //get value to String valueLevel
                     valueLevel = map.get("currentLevel");
-                    
+                    //connect two interface
                     Intent intent = getIntent();
                     TextView Value = (TextView)findViewById(R.id.Value);
                     //convert String to double
                     double valueInt=Double.parseDouble(valueLevel);
-                   
+                  // validate 
                     if(valueInt>=100){
                         Value.setText("100%");
 
