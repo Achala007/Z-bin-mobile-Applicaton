@@ -28,18 +28,18 @@
             Firebase myRef = new Firebase("https://zbin-6eb81.firebaseio.com/");
             Firebase myChildRef = myRef.child("level");
             myChildRef.addValueEventListener(new ValueEventListener() {
-                @Override
+               
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     //receive data as datasnapshot
                     Map<String,String> map = dataSnapshot.getValue(Map.class);
                     //get value to String valueLevel
                     valueLevel = map.get("currentLevel");
-                    //connect between two interfaces
+                    
                     Intent intent = getIntent();
                     TextView Value = (TextView)findViewById(R.id.Value);
                     //convert String to double
                     double valueInt=Double.parseDouble(valueLevel);
-                    //validate the value
+                   
                     if(valueInt>=100){
                         Value.setText("100%");
 
