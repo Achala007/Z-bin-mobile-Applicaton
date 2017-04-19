@@ -19,7 +19,7 @@ public class SplashScreen extends AppCompatActivity {
 
 
         final ImageView im=(ImageView)findViewById(R.id.splashImage1);
-        //load and rotate the splashscreen
+        //load and rotate the splash screen 1
         final Animation an= AnimationUtils.loadAnimation(getBaseContext(),R.anim.rotate);
         final Animation an2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.abc_fade_out);
 
